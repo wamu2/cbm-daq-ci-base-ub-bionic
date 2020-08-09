@@ -6,3 +6,6 @@ for Ubuntu Bionic (18.04 LTS) based tests.
 
 It is used as base for the production image
 [cbm-daq-ci-build-ub-bionic](https://github.com/wamu2/cbm-daq-ci-build-ub-bionic).
+
+Installed packages and reasoning behind:
+- identical to [cbm-daq-ci-base-ub-focal](https://github.com/wamu2/cbm-daq-ci-base-ub-focal/blob/master/README.md)
