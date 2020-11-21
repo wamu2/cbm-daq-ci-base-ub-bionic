@@ -1,5 +1,8 @@
 FROM ubuntu:bionic
 
+LABEL maintainer="w.f.j.mueller@gsi.de" \
+      description="CBM DAQ CI/CD - Ubuntu Bionic (18.04 LTS) base"
+
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
           git cmake make \
@@ -12,8 +15,9 @@ RUN apt-get update \
           libboost-chrono-dev libboost-system-dev libboost-timer-dev \
           libcpprest-dev \
           python3 python3-dev python3-setuptools python3-pip \
-          mypy \
+          python3-flake8 \
           python3-zmq python3-msgpack \
+          mypy \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
